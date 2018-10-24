@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="spelPlan">
+        <button class="meny" id="one" onClick="levelHanteraren.one()">0-9</button>
+        <button class="meny" id="two" onClick="levelHanteraren.two()">10-19</button>
+        <button class="meny" id="three" onClick="levelHanteraren.three()">20-29</button>
+        <button class="meny" id="four" onClick="levelHanteraren.four()">30-39</button>
+        <button class="meny" id="five" onClick="levelHanteraren.five()">40-49</button>
+        <button class="meny" id="six" onClick="levelHanteraren.six()">50-59</button>
+        <button class="meny" id="seven" onClick="levelHanteraren.seven()">60-69</button>
+        <button class="meny" id="eight" onClick="levelHanteraren.eight()">70-79</button>
+        <button class="meny" id="nine" onClick="levelHanteraren.nine()">80-89</button>
+        <button class="meny" id="ten" onClick="levelHanteraren.ten()">90-99</button>
+        <button class="meny" id="ten" onClick="memorering.getMemoryNumeber(memorering.getArray())">Memorering</button>
+        <br>
+        <h1 id="question"></h1>
+        <br>
+        <input id="svar" type=number value="" autofocus>
+    </div>
+    <div>
+        <section id="facit">
+            <h1 id="getFacit"></h1>
+        </section>
+        <h1 id="msg"></h1>
+    </div>
+    <script src="memorering.js"></script>
+    <script src="facit.js"></script>
+    <script src="random.js"></script>
+    <script src="questions.js"></script>
+    <script src="levelHanteraren.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
