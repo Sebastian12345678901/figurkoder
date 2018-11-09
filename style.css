@@ -15,13 +15,22 @@ div {
     padding: 3%;
 }
 
+#divMem {
+    
+    display: none;
+    
+}   
 
-
+#start{
+    
+    display: none;
+}
 #svar { 
     background-color: hsla(0, 18%, 97%, 0.801);
     border: 3px ridge midnightblue;
     border-radius: 5px;
     margin: 0%;
+    
 }
 
 #problem {

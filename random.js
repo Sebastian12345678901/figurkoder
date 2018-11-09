@@ -50,5 +50,9 @@ let random = {
         
         return [figurKoder[randomNumber], randomNumber];  
     },
-
+    konsonantArray: function(){
+        let konsonantKoder = ["M","N","THZ","B","WVK","FR","JPX","SD","GQL","C"];
+        randomNumber = Math.floor(Math.random() * 10)
+        return [konsonantKoder[randomNumber], randomNumber];
+    },
 }

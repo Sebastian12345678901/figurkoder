@@ -1,15 +1,6 @@
 let question = {
     getQuestion: function() {
-        // dittSvar = elFocus.value;
-        // let elMsg = document.getElementById("msg");
-        // if(dittSvar == rättSvar){
-        //     points++;
-        //     elMsg.innerText = "Rätt svar du har " + points + " poäng.";
-        // }else{
-        //     points--;
-        //     elMsg.innerText = "Fel svar du har " + points + " poäng.";
-        // }
-
+        
         elFocus.value = "";
         elFocus.focus();
         if (level == "one") {
@@ -52,6 +43,12 @@ let question = {
             randomArray = random.random99();
             rättSvar = randomArray[1];
             elQuestion.innerHTML = randomArray[0];
+        }else if (level == "konsonant"){
+            randomArray = random.konsonantArray();
+            rättSvar = randomArray[1];
+            elQuestion.innerHTML = randomArray[0];
+        }else if(level == "explination"){
+            document.getElementById("msg").innerText = "";
         }
 
     }

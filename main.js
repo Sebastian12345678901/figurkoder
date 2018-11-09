@@ -4,10 +4,18 @@ let points = 0;
 let dittSvar = 1;
 let rättSvar = 0;
 let elQuestion = document.getElementById("question");
+let btn = document.createElement("button");
+
+btn.setAttribute("class","meny");
+btn.setAttribute("onclick", "memorering.getFacit(memorering.myArray)");
+btn.setAttribute("id", "btn");
+btn.innerText = "facit";
+document.getElementById("facit").appendChild(btn);
+document.getElementById("btn").style.display = "none";
 elFocus = document.getElementById("svar");
-
+let elExplination = document.getElementById("explination");
+elExplination.addEventListener("click", instruktioner.getExplination);
 question.getQuestion();
-
 
 
 
@@ -15,8 +23,12 @@ question.getQuestion();
 window.addEventListener('keyup', function(e) {
 
     if (e.keyCode === 13) {
-        facit.getPoints();
-        question.getQuestion();
+        if(level !== "memorering"){
+            facit.getPoints();
+            question.getQuestion();
+        }else if(level === "memorering"){
+            memorering.getAnswer();
+        }
 
     }
 
