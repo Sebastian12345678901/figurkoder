@@ -68,17 +68,20 @@ let memorering = {
                     memorering.memoreringIsClicked = 2;
                 }
                 console.log(memorering.memoreringIsClicked);            
-                
+                document.getElementById("msg").innerHTML = "";
                 
                 btn.style.display = "none";
                 let array = memorering.getArray();
+                
                 let elQuestion = document.getElementById("question");
                 let i = 0;
 
                 elQuestion.innerText = "";
                 if(array[0] < 10){
                     elQuestion.innerHTML += "0";//lägger till en nolla för tal under 10.
+                
                 }
+                
                 elQuestion.innerText += array[0];//lägger till det första talet innan intervallen.
                 
                 // -------startat memoreringen-----------------------------------------------
@@ -100,7 +103,19 @@ let memorering = {
                                         elQuestion.innerHTML += "0";
                                     }
                                     elQuestion.innerText += array[i + 1];//plus ett för att den första redan är utskriven
-                    
+                                    //ändrar färgen på siffrorna ifall dom är samma.
+                                    if(array[i] === array[i + 1])
+                                    {   
+                                        elQuestion.style.color = "red";
+                                    }else{
+                                        elQuestion.style.color = "midnightblue";
+                                    }
+                                    if(array[i] === array[i + 1] && array[i - 1]  === array[i + 1]){
+                                        elQuestion.style.color = "midnightblue";
+                                    }
+                                    if(array[i] === array[i + 1] && array[i - 1]  === array[i + 1] && array[i - 2]  === array[i + 1]){
+                                        elQuestion.style.color = "red";
+                                    }
                                 i ++;
                                     //kollar så att man har gått igenom hela arrayen och stannar intervallen.
                                 if(i == array.length){
@@ -181,7 +196,7 @@ let memorering = {
                         console.log("rättPlattsIArray: " + rättPlatsIArray);
                     }
                 }
-                
+                this.yourAnswer = [];
             }if(rättPlatsIArray !== this.myArray.length){
                 document.getElementById("msg").innerText += "Siffrorna skrevs in i fel ording. ";
                 

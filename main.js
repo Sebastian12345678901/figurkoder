@@ -28,6 +28,7 @@ window.addEventListener('keyup', function(e) {
             question.getQuestion();
         }else if(level === "memorering"){
             memorering.getAnswer();
+            console.log(memorering.myArray);
         }
 
     }
