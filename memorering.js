@@ -37,7 +37,7 @@ let memorering = {
         return randomArray;
     },
     //skriver ut alla nummer i en intervall och skapar facit knappen 
-    getMemoryNumeber: function(array) {
+    getMemoryNumeber: function() {
         memorering.memoreringIsClicked++;//kollar ifall man har valt memorerings nivån igen.
         if(memorering.memoreringIsClicked > 1){
             memorering.memoreringIsClicked = 1;
@@ -140,7 +140,7 @@ let memorering = {
                                 memorering.memoreringIsClicked = 0;
                             }
                             
-                        }, 6000);
+                        }, 1000);
                 
             
         }

@@ -9,114 +9,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="spelPlan">
-        <button class="meny" id="konsonant" onClick="levelHanteraren.konsonant()">konsonantKodning</button>
-        <button class="meny" id="one" onClick="levelHanteraren.one()">0-9</button>
-        <button class="meny" id="two" onClick="levelHanteraren.two()">10-19</button>
-        <button class="meny" id="three" onClick="levelHanteraren.three()">20-29</button>
-        <button class="meny" id="four" onClick="levelHanteraren.four()">30-39</button>
-        <button class="meny" id="five" onClick="levelHanteraren.five()">40-49</button>
-        <button class="meny" id="six" onClick="levelHanteraren.six()">50-59</button>
-        <button class="meny" id="seven" onClick="levelHanteraren.seven()">60-69</button>
-        <button class="meny" id="eight" onClick="levelHanteraren.eight()">70-79</button>
-        <button class="meny" id="nine" onClick="levelHanteraren.nine()">80-89</button>
-        <button class="meny" id="ten" onClick="levelHanteraren.ten()">90-99</button>
-        <button class="meny" id="memorering" onClick="memorering.getMemoryNumeber(memorering.getArray())">Memorering</button>
-        <br>
-        <h1 id="question"></h1>
-        <br>
-        <input id="svar" type="number" value="" autofocus>
+  <body>
+      <div id="spelPlan">
+          <button class="meny" id="konsonant" onClick="levelHanteraren.konsonant()">konsonantKodning</button>
+          <button class="meny" id="one" onClick="levelHanteraren.one()">0-9</button>
+          <button class="meny" id="two" onClick="levelHanteraren.two()">10-19</button>
+          <button class="meny" id="three" onClick="levelHanteraren.three()">20-29</button>
+          <button class="meny" id="four" onClick="levelHanteraren.four()">30-39</button>
+          <button class="meny" id="five" onClick="levelHanteraren.five()">40-49</button>
+          <button class="meny" id="six" onClick="levelHanteraren.six()">50-59</button>
+          <button class="meny" id="seven" onClick="levelHanteraren.seven()">60-69</button>
+          <button class="meny" id="eight" onClick="levelHanteraren.eight()">70-79</button>
+          <button class="meny" id="nine" onClick="levelHanteraren.nine()">80-89</button>
+          <button class="meny" id="ten" onClick="levelHanteraren.ten()">90-99</button>
+          <button class="meny" id="memorering" onClick="memorering.getMemoryNumeber()">Memorering</button>
+          <br>
+          <h1 id="question"></h1>
+          <br>
+          <input id="svar" type="number" value="" autofocus>
+        </div>
+        
+        
+        <div id="right">
+          <section id="facit">
+            <h2 id="getFacit"></h2>
+          </section>
+          <button class="meny" id="start">start</button>
+          <button class="meny" id="explination" >instruktioner</button>
+          <!-- parametrar för memorerings delen -->
+          <div id="divMem">
+            <br>
+            <p id="msg"></p>
+            <!-- visar alla svaren i ett table-->
+    
+            <p>skriv in vilket span siffrorna ska ha 00-99 och hur många sifferpar du vill ha</p>
+            <input class="meny" id="span" type="number">
+            <button class="meny" id="getSpan" onclick = "memorering.getSpan()">00-99</button>
+            <br>
+            
+            <!-- bestämmer hur många sifferpar -->
+            <input class="meny" id="pares" type="number">
+            <button class="meny" id="getPares" onclick="memorering.getPares()">0-infinity</button>
+            <!-- bestämmer spannet på siffrorna -->
+          </div>
+        <table id="table">
+          <tr>
+                <th id = "WordTBL"></th>
+                <th id = "numberTBL"></th>
+              </tr>
+              <tr id = "rad0">
+                  <td id = "ord0"></td>
+                  <td id = "nummer0"></td>
+                </tr>
+                <tr id = "rad1">
+                  <td id = "ord1"></td>
+                  <td id = "nummer1"></td>
+                </tr>
+                <tr id = "rad2">
+                  <td id = "ord2"></td>
+                  <td id = "nummer2"></td>
+                </tr>
+                <tr id = "rad3">
+                  <td id = "ord3"></td>
+                  <td id = "nummer3"></td>
+                </tr>
+                <tr id = "rad4">
+                  <td id = "ord4"></td>
+                  <td id = "nummer4"></td>
+                </tr>
+                <tr id = "rad5">
+                  <td id = "ord5"></td>
+                  <td id = "nummer5"></td>
+                </tr>
+                <tr id = "rad6">
+                  <td id = "ord6"></td>
+                  <td id = "nummer6"></td>
+                </tr>
+                <tr id = "rad7">
+                  <td id = "ord7"></td>
+                  <td id = "nummer7"></td>
+                </tr>
+                <tr id = "rad8">
+                  <td id = "ord8"></td>
+                  <td id = "nummer8"></td>
+                </tr>
+                <tr id = "rad9">
+                  <td id = "ord9"></td>
+                  <td id = "nummer9"></td>
+                </tr>
+
+          </table>
       </div>
-      
-    </div>
-    <div id="right">
-      <section id="facit">
-        <h1 id="getFacit"></h1>
-      </section>
-      <button class="meny" id="start">start</button>
-      <button class="meny" id="explination" >instruktioner</button>
-      <br>
-      <p id="msg"></p>
-      <!-- visar alla svaren i ett table-->
-      <table id="table">
-        <tr>
-              <th id = "WordTBL"></th>
-              <th id = "numberTBL"></th>
-            </tr>
-            <tr id = "rad0">
-                <td id = "ord0"></td>
-                <td id = "nummer0"></td>
-              </tr>
-              <tr id = "rad1">
-                <td id = "ord1"></td>
-                <td id = "nummer1"></td>
-              </tr>
-              <tr id = "rad2">
-                <td id = "ord2"></td>
-                <td id = "nummer2"></td>
-              </tr>
-              <tr id = "rad3">
-                <td id = "ord3"></td>
-                <td id = "nummer3"></td>
-              </tr>
-              <tr id = "rad4">
-                <td id = "ord4"></td>
-                <td id = "nummer4"></td>
-              </tr>
-              <tr id = "rad5">
-                <td id = "ord5"></td>
-                <td id = "nummer5"></td>
-              </tr>
-              <tr id = "rad6">
-                <td id = "ord6"></td>
-                <td id = "nummer6"></td>
-              </tr>
-              <tr id = "rad7">
-                <td id = "ord7"></td>
-                <td id = "nummer7"></td>
-              </tr>
-              <tr id = "rad8">
-                <td id = "ord8"></td>
-                <td id = "nummer8"></td>
-              </tr>
-              <tr id = "rad8">
-                <td id = "ord8"></td>
-                <td id = "nummer8"></td>
-              </tr>
-              <tr id = "rad8">
-                <td id = "ord8"></td>
-                <td id = "nummer8"></td>
-              </tr>
-              <tr id = "rad8">
-                <td id = "ord8"></td>
-                <td id = "nummer8"></td>
-              </tr>
-              <tr id = "rad9">
-                <td id = "ord9"></td>
-                <td id = "nummer9"></td>
-              </tr>
-
-        </table>
-    </div>
-    <!-- parametrar för memorerings delen -->
-    <div id="divMem">
-      <!-- bestämmer spannet på siffrorna -->
-      <p>skriv in vilket span siffrorna ska ha 00-99 och hur många sifferpar du vill ha</p>
-      <input class="meny" id="span" type="number">
-      <button class="meny" id="getSpan" onclick = "memorering.getSpan()">00-99</button>
-      <!-- bestämmer hur många sifferpar -->
-      <input class="meny" id="pares" type="number">
-      <button class="meny" id="getPares" onclick="memorering.getPares()">0-infinity</button>
 
 
-    <script src="instruktioner.js"></script>
-    <script src="memorering.js"></script>
-    <script src="facit.js"></script>
-    <script src="random.js"></script>
-    <script src="questions.js"></script>
-    <script src="levelHanteraren.js"></script>
-    <script src="main.js"></script>
-</body>
-
+      <script src="instruktioner.js"></script>
+      <script src="memorering.js"></script>
+      <script src="facit.js"></script>
+      <script src="random.js"></script>
+      <script src="questions.js"></script>
+      <script src="levelHanteraren.js"></script>
+      <script src="main.js"></script>
+  </body>
 </html>

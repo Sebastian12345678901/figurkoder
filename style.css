@@ -1,5 +1,5 @@
 body {
-    background-image: url("bilder/visualizing.jpg");
+    background-image: url("bilder/braintrix.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: midnightblue;
@@ -18,6 +18,10 @@ div {
 #divMem {
     
     display: none;
+    background-color: hsla(0, 18%, 97%, 0.801);
+    border-style: none;
+    
+    margin: 0% 5% 0% 5%;
     
 }   
 

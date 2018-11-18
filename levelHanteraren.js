@@ -1,6 +1,7 @@
 levelHanteraren = {
     one: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         
         level = "one";
         // console.log("1");
@@ -18,6 +19,7 @@ levelHanteraren = {
     },
     two: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "two";
         // console.log("2");
         question.getQuestion(level);
@@ -34,6 +36,7 @@ levelHanteraren = {
     },
     three: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "three";
         // console.log("3");
         question.getQuestion(level);
@@ -50,6 +53,7 @@ levelHanteraren = {
     },
     four: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "four";
         // console.log("4");
         question.getQuestion(level);
@@ -66,6 +70,7 @@ levelHanteraren = {
     },
     five: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "five";
         // console.log("5");
         question.getQuestion(level);
@@ -82,6 +87,7 @@ levelHanteraren = {
     },
     six: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "six";
         // console.log("6");
         question.getQuestion(level);
@@ -98,6 +104,7 @@ levelHanteraren = {
     },
     seven: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "seven";
         // console.log("7");
         question.getQuestion(level);
@@ -114,6 +121,7 @@ levelHanteraren = {
     },
     eight: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "eight";
         // console.log("8");
         question.getQuestion(level);
@@ -130,6 +138,7 @@ levelHanteraren = {
     },
     nine: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "nine";
         // console.log("9");
         question.getQuestion(level);
@@ -146,6 +155,7 @@ levelHanteraren = {
     },
     ten: function() {
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "ten";
         // console.log("10")
         question.getQuestion(level);
@@ -163,17 +173,20 @@ levelHanteraren = {
 
     memorering: function(){
      
+        document.getElementById("getFacit").innerHTML = ""
      level = "memorering";
      
     
     },
     explination: function(){
         level = "explination";
+        document.getElementById("getFacit").innerHTML = ""
         question.getQuestion(level);
         
     },
     konsonant: function(){
         
+        document.getElementById("getFacit").innerHTML = ""
         level = "konsonant";
         question.getQuestion(level);
         for(i = 0; i < 10 ; i++){
